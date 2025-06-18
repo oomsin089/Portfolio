@@ -56,7 +56,6 @@ export default function Contact() {
         </motion.div>
 
         <div className="max-w-4xl mx-auto">
-          {/* Contact Info Card */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -65,7 +64,6 @@ export default function Contact() {
           >
             <Paper elevation={8} className="p-10 !rounded-2xl bg-white/95 backdrop-blur-sm">
               <div className="grid md:grid-cols-2 gap-12">
-                {/* Contact Details */}
                 <div>
                   <Typography variant="h4" className="text-2xl font-bold text-gray-800 mb-8">
                     📞 Contact Information
@@ -127,7 +125,6 @@ export default function Contact() {
                   </div>
                 </div>
 
-                {/* Social Links & Additional Info */}
                 <div>
                   <Typography variant="h4" className="text-2xl font-bold text-gray-800 mb-8">
                     🌐 Social Media
@@ -166,7 +163,6 @@ export default function Contact() {
                     ))}
                   </div>
 
-                  {/* Download Resume Button */}
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -183,7 +179,6 @@ export default function Contact() {
                     </a>
                   </motion.div>
 
-                  {/* Status Info */}
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -207,7 +202,6 @@ export default function Contact() {
           </motion.div>
         </div>
 
-        {/* Footer */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

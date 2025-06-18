@@ -14,20 +14,20 @@ export default function Projects() {
     {
       title: 'Complaint Website',
       description: 'เว็บไซต์รับเรื่องร้องเรียน/ร้องทุกข์คณะบริหารธุรกิจ',
-      image: '/image.png',
+      image: '/images/image.png',
       technologies: ['Next.js', 'Kotlin', 'PostgreSQL', 'Tailwind CSS', 'Spring Boot', 'MUI'],
       github: 'https://github.com/oomsin089/Complaint',
       github2: 'https://github.com/oomsin089/Rmutt',
-      hasBackend: true, // มี backend แยก
+      hasBackend: true, 
       featured: true
     },
     {
       title: 'Portfolio Website',
       description: 'เว็บไซต์แสดงผลงานส่วนตัวที่คุณกำลังดูอยู่ตอนนี้ เน้นการออกแบบและ UX ที่ดี',
-      image: '/about.png',
+      image: '/images/about.png',
       technologies: ['Next.js', 'Tailwind CSS', 'MUI', 'Framer Motion'],
       github: 'https://github.com/oomsin089/Portfolio',
-      hasBackend: false, // ไม่มี backend แยก
+      hasBackend: false,
       featured: true
     }
   ];
@@ -87,7 +87,6 @@ export default function Projects() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   
-                  {/* Zoom Icon Overlay */}
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="bg-white/90 rounded-full p-3 backdrop-blur-sm">
                       <ZoomInIcon className="text-gray-700" fontSize="large" />
@@ -116,7 +115,6 @@ export default function Projects() {
 
                   <div className="flex gap-3">
                     {project.hasBackend ? (
-                      // แสดง 2 ปุ่มสำหรับโปรเจกต์ที่มี backend แยก
                       <>
                         <Button
                           variant="outlined"
@@ -136,7 +134,6 @@ export default function Projects() {
                         </Button>
                       </>
                     ) : (
-                      // แสดง 1 ปุ่มสำหรับโปรเจกต์ที่ไม่มี backend แยก
                       <Button
                         variant="outlined"
                         startIcon={<GitHubIcon />}
@@ -154,7 +151,6 @@ export default function Projects() {
           ))}
         </div>
 
-        {/* Image Modal */}
         <Dialog
           open={isModalOpen}
           onClose={handleCloseModal}
@@ -165,7 +161,6 @@ export default function Projects() {
           }}
         >
           <DialogContent className="!p-0 !bg-transparent relative">
-            {/* Close Button */}
             <IconButton
               onClick={handleCloseModal}
               className="!absolute !top-4 !right-4 !z-10 !bg-white/90 hover:!bg-white !shadow-lg"
@@ -173,7 +168,6 @@ export default function Projects() {
               <CloseIcon />
             </IconButton>
             
-            {/* Image */}
             {selectedImage && (
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -188,7 +182,6 @@ export default function Projects() {
                   className="w-full h-auto max-h-[80vh] object-contain rounded-lg shadow-2xl"
                 />
                 
-                {/* Image Title */}
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-lg">
                   <Typography variant="h6" className="text-white font-bold">
                     {selectedImage.title}

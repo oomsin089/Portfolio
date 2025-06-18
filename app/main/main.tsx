@@ -2,15 +2,7 @@
 import React from 'react';
 
 export default function Hero() {
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
-  };
+
 
   return (
     <section id="hero" className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center relative overflow-hidden pt-16">
@@ -22,7 +14,6 @@ export default function Hero() {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-cyan-400 rounded-full mix-blend-multiply filter blur-2xl opacity-15 animate-pulse" style={{animationDelay: '1s'}}></div>
       </div>
 
-      {/* Floating particles */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(6)].map((_, i) => (
           <div
@@ -75,7 +66,6 @@ export default function Hero() {
 
       </div>
 
-      {/* Enhanced Scroll indicator */}
       <div 
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
         style={{animationDuration: '2s'}}
@@ -87,7 +77,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Custom CSS for animations */}
       <style jsx>{`
         @keyframes fade-in {
           from {

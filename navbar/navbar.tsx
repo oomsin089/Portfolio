@@ -65,7 +65,6 @@ export default function Navbar({ scrollToSection }: NavbarProps) {
             </Typography>
           </motion.div>
 
-          {/* Desktop Menu - Show all items */}
           <Box className="hidden md:flex gap-1 xl:gap-2">
             {menuItems.map((item, index) => (
               <motion.div
@@ -84,7 +83,6 @@ export default function Navbar({ scrollToSection }: NavbarProps) {
             ))}
           </Box>
 
-          {/* Mobile Menu Button */}
           <Box className="md:hidden">
             <IconButton
               onClick={() => setMobileMenuOpen(true)}
@@ -97,7 +95,6 @@ export default function Navbar({ scrollToSection }: NavbarProps) {
         </Toolbar>
       </AppBar>
 
-      {/* Mobile Drawer Menu */}
       <Drawer
         anchor="right"
         open={mobileMenuOpen}

@@ -28,7 +28,6 @@ import {
   SiDbeaver,
 } from "react-icons/si";
 
-// Updated Skills Arrays with correct colors
 export default function Skills() {
   const frontendSkills = [
     { name: "React.js", icon: <FaReact className="text-cyan-400" /> },
@@ -83,7 +82,6 @@ export default function Skills() {
         </motion.div>
 
         <div className="grid lg:grid-cols-3 gap-8">
-          {/* Frontend Skills */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -120,7 +118,6 @@ export default function Skills() {
             </Paper>
           </motion.div>
 
-          {/* Backend Skills */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -157,7 +154,6 @@ export default function Skills() {
             </Paper>
           </motion.div>
 
-          {/* Tools & Others */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -192,7 +188,6 @@ export default function Skills() {
                 ))}
               </div>
 
-              {/* Learning Goals */}
               <div className="p-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl text-white">
                 <Typography
                   variant="h6"
