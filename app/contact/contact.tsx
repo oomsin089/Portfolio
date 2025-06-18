@@ -198,7 +198,7 @@ export default function Contact() {
                       </Typography>
                     </div>
                     <Typography variant="body2" className="text-gray-700">
-                      กำลังมองหาโอกาสในการเริ่มต้นอาชีพด้าน Software Developer<br />
+                      กำลังมองหาโอกาสในการเริ่มต้นอาชีพด้าน Full Stack Developer<br />
                     </Typography>
                   </motion.div>
                 </div>
@@ -219,7 +219,7 @@ export default function Contact() {
             ขอบคุณสำหรับความสนใจ | หวังว่าจะได้มีโอกาสร่วมงานกับคุณ
           </Typography>
           <Typography variant="body2" className="text-gray-500 mt-2">
-            © 2024 Nattanun Naknaree Portfolio
+            © 2025 Nattanun Naknaree Portfolio
           </Typography>
         </motion.div>
       </div>
