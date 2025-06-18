@@ -69,7 +69,7 @@ export default function Experience() {
     {
       title: "Software Developer Internship Certificate",
       issuer: "PROTOSS TECHNOLOGY CO., LTD.",
-      date: "วันที่ 1 เมษายน 2567 - 25 ตุลาคม 2567",
+      date: "April 1, 2024 – October 25, 2024",
       image: "/images/intern.jpg",
       description:
         "Awarded for completing a software developer internship with a focus on cloud computing fundamentals, practical coding skills, and collaborative project development under Protoss Technology Co., Ltd.",
@@ -77,7 +77,7 @@ export default function Experience() {
     {
       title: "Cooperative education competition",
       issuer: "Rajamangala University of Technology Thanyaburi",
-      date: "วันที่ 17 มกราคม 2568 ",
+      date: "January 17, 2025",
       image: "/images/Cooperative education competition.jpg",
       description:
         "Awarded 3rd place in the 2024 Cooperative Education Project Competition for developing an issue reporting and meeting room booking system, demonstrating practical skills in full-stack development and team collaboration.",
@@ -85,7 +85,7 @@ export default function Experience() {
     {
       title: "First class honors",
       issuer: "Rajamangala University of Technology Thanyaburi",
-      date: "31 มีนาคม 2568",
+      date: "March 31, 2025",
       image: "/images/First class honors.jpg",
       description:
         "Graduated with First Class Honors in Business Administration from Rajamangala University of Technology Thanyaburi, demonstrating outstanding academic performance and dedication.",
@@ -121,10 +121,8 @@ export default function Experience() {
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
         </motion.div>
 
-        {/* Experience Timeline */}
         <div className="max-w-4xl mx-auto mb-20">
           <div className="relative">
-            {/* Timeline line */}
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 to-purple-600"></div>
 
             {experiences.map((exp, index) => (
@@ -136,7 +134,6 @@ export default function Experience() {
                 viewport={{ once: true }}
                 className="relative mb-12"
               >
-                {/* Timeline dot */}
                 <div className="absolute left-6 w-4 h-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full border-4 border-white shadow-lg"></div>
 
                 <div className="ml-20">
@@ -196,7 +193,6 @@ export default function Experience() {
           </div>
         </div>
 
-        {/* Certificates Section */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -206,7 +202,7 @@ export default function Experience() {
         >
           <div className="text-center mb-12">
             <div className="flex items-center justify-center gap-3 mb-4">
-              <EmojiEventsIcon className="text-yellow-500 text-4xl" />
+              <EmojiEventsIcon className="text-yellow-500 text-6xl" />
               <Typography
                 variant="h3"
                 className="text-3xl md:text-4xl font-bold text-gray-800"
@@ -247,7 +243,6 @@ export default function Experience() {
                             backgroundColor: "#f9fafb",
                           }}
                           onError={(e) => {
-                            // Fallback if image doesn't exist
                             const img = e.target as HTMLImageElement;
                             img.style.display = "none";
                             const nextElement =
@@ -258,7 +253,6 @@ export default function Experience() {
                           }}
                         />
 
-                        {/* Fallback placeholder */}
                         <Box
                           className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center"
                           style={{ display: "none" }}
@@ -266,10 +260,8 @@ export default function Experience() {
                           <VerifiedIcon className="text-white text-6xl" />
                         </Box>
 
-                        {/* Hover overlay */}
                         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-                        {/* Zoom icon on hover */}
                         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                           <div className="bg-white/90 rounded-full p-3 backdrop-blur-sm">
                             <ZoomInIcon
@@ -279,7 +271,6 @@ export default function Experience() {
                           </div>
                         </div>
 
-                        {/* Certificate badge */}
                         <Box className="absolute top-4 right-4">
                           <div className="bg-white rounded-full p-2 shadow-lg">
                             <VerifiedIcon className="text-blue-600" />
@@ -328,7 +319,6 @@ export default function Experience() {
           </div>
         </motion.div>
 
-        {/* Image Modal */}
         <Dialog
           open={isModalOpen}
           onClose={handleCloseModal}
