@@ -198,7 +198,7 @@ export default function Contact() {
                       </Typography>
                     </div>
                     <Typography variant="body2" className="text-gray-700">
-                      กำลังมองหาโอกาสในการเริ่มต้นอาชีพด้าน Full Stack Developer<br />
+                      Full Stack Developer<br />
                     </Typography>
                   </motion.div>
                 </div>
@@ -216,7 +216,7 @@ export default function Contact() {
           className="text-center mt-16 pt-8 border-t border-gray-200"
         >
           <Typography variant="body1" className="text-gray-600">
-            ขอบคุณสำหรับความสนใจ | หวังว่าจะได้มีโอกาสร่วมงานกับคุณ
+            ขอบคุณมาก ๆ เลยครับ ที่ให้ความสนใจ หวังว่าจะได้มีโอกาสร่วมงานและสร้างสิ่งดี ๆ ร่วมกันครับ
           </Typography>
           <Typography variant="body2" className="text-gray-500 mt-2">
             © 2025 Nattanun Naknaree Portfolio
