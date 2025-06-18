@@ -43,17 +43,23 @@ export default function Hero() {
           
           <div className="opacity-0 animate-fade-in-up" style={{animationDelay: '0.4s', animationFillMode: 'forwards'}}>
             <h1 
-              className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent leading-tight"
+              className="md:text-7xl lg:text-8xl font-bold mb-6 bg-gradient-to-r text-white bg-clip-text text-transparent leading-tight"
+             
+            >
+              Portfolio
+            </h1>
+            <h6 
+              className=" md:text-5xl mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent leading-tight"
               style={{
                 textShadow: '0 0 30px rgba(147, 51, 234, 0.3)',
               }}
             >
-              นาย ณัฐนันท์ นาคนารี
-            </h1>
+              Nattanun Naknaree
+            </h6>
           </div>
           
           <div className="opacity-0 animate-fade-in-up" style={{animationDelay: '0.6s', animationFillMode: 'forwards'}}>
-            <h2 className="text-2xl md:text-4xl text-gray-300 mb-8 font-light">
+            <h2 className="md:text-2xl text-gray-300 mb-8 font-light">
               <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
                 Full Stack Developer
               </span>
@@ -67,17 +73,6 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="opacity-0 animate-fade-in-up" style={{animationDelay: '1s', animationFillMode: 'forwards'}}>
-          <button
-            onClick={scrollToContact}
-            className="bg-gradient-to-r from-blue-500 via-purple-600 to-pink-600 hover:from-blue-600 hover:via-purple-700 hover:to-pink-700 px-12 py-4 rounded-full text-lg font-semibold transform transition-all duration-300 shadow-2xl hover:shadow-purple-500/25 hover:scale-105 active:scale-95 mt-5"
-            style={{
-              boxShadow: '0 20px 40px rgba(147, 51, 234, 0.3), 0 0 20px rgba(147, 51, 234, 0.2)',
-            }}
-          >
-            ติดต่อเลย!
-          </button>
-        </div>
       </div>
 
       {/* Enhanced Scroll indicator */}

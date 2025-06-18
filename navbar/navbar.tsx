@@ -61,7 +61,7 @@ export default function Navbar({ scrollToSection }: NavbarProps) {
               className="font-bold text-white cursor-pointer text-sm sm:text-base lg:text-lg"
               onClick={() => scrollToSection('hero')}
             >
-              นาย ณัฐนันท์ นาคนารี
+              Portfolio
             </Typography>
           </motion.div>
 

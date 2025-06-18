@@ -25,6 +25,7 @@ import {
   SiMysql,
   SiPostman,
   SiVercel,
+  SiDbeaver,
 } from "react-icons/si";
 
 // Updated Skills Arrays with correct colors
@@ -60,6 +61,7 @@ export default function Skills() {
     { name: "Figma", icon: <FaFigma className="text-purple-500" /> },
     { name: "Postman", icon: <SiPostman className="text-orange-500" /> },
     { name: "Vercel", icon: <SiVercel className="text-black" /> },
+    { name: "DBeaver", icon: <SiDbeaver className="text-black" /> },
   ];
   return (
     <section id="skills" className="py-16 bg-white">
