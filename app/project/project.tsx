@@ -24,7 +24,7 @@ export default function Projects() {
     {
       title: 'Portfolio Website',
       description: 'เว็บไซต์แสดงผลงานส่วนตัวที่คุณกำลังดูอยู่ตอนนี้ เน้นการออกแบบและ UX ที่ดี',
-      image: '/portfolio.png',
+      image: '/about.png',
       technologies: ['Next.js', 'Tailwind CSS', 'MUI', 'Framer Motion'],
       github: 'https://github.com/oomsin089/Portfolio',
       hasBackend: false, // ไม่มี backend แยก
